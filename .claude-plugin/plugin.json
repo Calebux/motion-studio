@@ -1,0 +1,8 @@
+{
+  "name": "motion-studio",
+  "version": "0.2.0",
+  "description": "Motion design videos rendered from code: a deterministic seek(t) canvas engine, closed-form springs, synthesized music and SFX on a beat grid, and a critique loop where Claude reviews its own frames until every score is 8+.",
+  "author": { "name": "Caleb (Calbridge Digital)" },
+  "keywords": ["motion design", "video", "animation", "showreel", "launch video", "ffmpeg", "playwright"],
+  "license": "MIT"
+}

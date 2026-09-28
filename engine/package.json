@@ -1,0 +1,22 @@
+{
+  "name": "motion-film",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "node tools/preflight.mjs",
+    "lint": "node tools/lint.mjs",
+    "test": "node tools/lint.mjs && node tools/determinism.mjs",
+    "stills": "node tools/render.mjs --stills every:0.5",
+    "draft": "node tools/render.mjs --draft",
+    "render": "node tools/render.mjs",
+    "music": "node tools/music.mjs score.json",
+    "sfx": "node tools/sfx.mjs",
+    "mix": "node tools/mix.mjs",
+    "critique": "node tools/critique.mjs",
+    "film": "node tools/lint.mjs && node tools/render.mjs && node tools/mix.mjs && node tools/critique.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

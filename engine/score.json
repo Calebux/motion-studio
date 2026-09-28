@@ -1,0 +1,20 @@
+{
+  "bpm": 120,
+  "seed": 7,
+  "chords": ["Am", "Fmaj7", "C", "G"],
+  "sections": [
+    { "name": "hook",   "bars": 1, "layers": ["pad", "hat", "arp"] },
+    { "name": "grid",   "bars": 1, "layers": ["pad", "kick", "hat", "bass", "arp"], "impact": true },
+    { "name": "morph",  "bars": 1, "layers": ["pad", "kick", "snare", "hat", "bass", "arp"] },
+    { "name": "lockup", "bars": 1, "layers": ["pad", "kick", "clap", "bass"], "patterns": { "kick": "x...............", "bass": "x..............." } }
+  ],
+  "patterns": {
+    "kick":  "x...x...x...x...",
+    "snare": "....x.......x...",
+    "hat":   "..x...x...x...xo",
+    "bass":  "x..x..x...x..x..",
+    "arp":   "x.xx.x.xx.x.x.xx"
+  },
+  "mix": { "kick": 1, "snare": 0.7, "hat": 0.3, "bass": 0.55, "pad": 0.3, "arp": 0.28, "impact": 0.7 },
+  "tail": 1.5
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>motion studio</title>
+<style>
+  html, body { margin: 0; background: #0b0b0a; }
+  canvas { display: block; }
+  #ui { display: none; }
+  body.preview { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; font: 13px ui-monospace, monospace; color: #aaa; }
+  body.preview canvas { max-width: 96vw; max-height: calc(100vh - 80px); object-fit: contain; box-shadow: 0 0 0 1px #222; }
+  body.preview #ui { display: flex; align-items: center; gap: 10px; width: min(900px, 96vw); }
+  #ui button { background: #222; color: #eee; border: 0; width: 36px; height: 28px; border-radius: 6px; cursor: pointer; }
+  #track { position: relative; flex: 1; }
+  #bar { width: 100%; margin: 0; }
+  #ticks { position: absolute; left: 0; right: 0; top: -6px; height: 4px; pointer-events: none; }
+  #ticks i { position: absolute; width: 1px; height: 4px; background: #555; }
+  #ticks i.down { background: #d97757; height: 6px; top: -2px; }
+  #time { min-width: 110px; text-align: right; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui">
+  <button id="play">❚❚</button>
+  <div id="track"><div id="ticks"></div><input id="bar" type="range" min="0" value="0"></div>
+  <span id="time"></span>
+</div>
+<audio id="audio" preload="auto"></audio>
+<script type="module" src="lib/runtime.js"></script>
+</body>
+</html>

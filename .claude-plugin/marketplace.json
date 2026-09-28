@@ -1,0 +1,14 @@
+{
+  "name": "calbridge-motion",
+  "description": "Calbridge motion tools: code-rendered motion design with a self-critique loop.",
+  "owner": {
+    "name": "Caleb (Calbridge Digital)"
+  },
+  "plugins": [
+    {
+      "name": "motion-studio",
+      "source": "./",
+      "description": "Motion design videos rendered from code, with a self-critique loop."
+    }
+  ]
+}
